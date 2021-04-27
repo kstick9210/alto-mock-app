@@ -33,6 +33,16 @@ body {
   font-weight: 800;
 }
 
+.col-head {
+  padding: 0.4rem 0;
+}
+
+.col-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .dark-color {
   color: rgb(30, 29, 30)
 }
@@ -50,12 +60,22 @@ body {
   letter-spacing: 0.1rem;
 }
 
+.grotesk-light {
+  font-family: 'Grotesk Light', sans-serif;
+}
+
 .light-weight {
   font-weight: 200;
 }
 
 .linotype {
   font-family: 'Linotype', sans-serif;
+}
+
+.row-wrap {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .single-border {

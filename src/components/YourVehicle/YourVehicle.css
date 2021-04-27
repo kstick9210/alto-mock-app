@@ -1,4 +1,4 @@
-.driver-info-wrap {
+.vehicle-info-wrap {
     display: flex;
     flex-direction: column;
     grid-row: 2/3;
@@ -6,8 +6,10 @@
     padding: 2rem;
 }
 
-.YourDriver {
+.YourVehicle {
     display: grid;
     grid-template-rows: 50% auto;
     min-height: 95vh;
+    padding: 1rem 1.4rem;
+    width: 100%;
 }

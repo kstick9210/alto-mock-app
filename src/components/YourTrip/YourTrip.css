@@ -2,22 +2,6 @@
     padding-bottom: 0.5rem;
 }
 
-.col-head {
-    padding: 0.4rem 0;
-}
-
-.col-wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.row-wrap {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-}
-
 .trip-notes {
     width: 70vw;
 }
@@ -27,5 +11,5 @@
     flex-direction: column;
     justify-content: space-evenly;
     padding: 1rem 1.4rem;
-    min-height: 90vh;
+    min-height: 95vh;
 }
