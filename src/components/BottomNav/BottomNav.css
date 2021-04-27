@@ -1,11 +1,13 @@
 .BottomNav {
+    background-color: rgb(247, 243, 239);
     bottom: 0;
     display: flex;
-    height: 4.5rem;
+    height: 4rem;
     justify-content: space-between;
     padding: 1.2rem;
-    position: fixed;
+    position: sticky;
     width: 100vw;
+    z-index: 1000;
 }
 
 .nav-icon {

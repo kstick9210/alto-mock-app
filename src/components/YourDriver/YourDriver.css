@@ -1,0 +1,14 @@
+.driver-info-wrap {
+    display: flex;
+    flex-direction: column;
+    grid-row: 2/3;
+    justify-content: space-between;
+    justify-self: stretch;
+    padding: 2rem;
+}
+
+.YourDriver {
+    display: grid;
+    grid-template-rows: 50% auto;
+    min-height: 90vh;
+}

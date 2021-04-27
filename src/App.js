@@ -4,6 +4,7 @@ import axios from 'axios';
 import './App.css';
 import altoLogo from './assets/Alto_logo.png';
 import YourTrip from './components/YourTrip/YourTrip';
+import YourDriver from './components/YourDriver/YourDriver';
 import BottomNav from './components/BottomNav/BottomNav';
 
 export default function App() {
@@ -32,6 +33,7 @@ export default function App() {
       {tripDetails ? (
         <>
           <YourTrip tripDetails={tripDetails} />
+          <YourDriver driverDetails={driverDetails} />
           <BottomNav 
             destination={tripDetails.dropoff_location}
             eta={tripDetails.estimated_arrival}
