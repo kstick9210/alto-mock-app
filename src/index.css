@@ -23,6 +23,11 @@
   box-sizing: border-box;
 }
 
+.active-button {
+  color: rgb(255, 255, 255);
+  background-color: rgb(172, 130, 109);
+}
+
 body {
   background-color: rgb(247, 243, 239);
   color: rgb(108, 104, 91);
@@ -50,7 +55,6 @@ body {
 .default-button {
   letter-spacing: 0.1rem;
   padding: 0.8rem;
-  background-color: inherit;
   border: 1px solid rgb(221, 218, 214);
 }
 

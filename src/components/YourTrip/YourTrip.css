@@ -9,7 +9,7 @@
 .YourTrip {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 1rem 1.4rem;
-    min-height: 95vh;
+    justify-content: space-between;
+    padding: 4.5rem 1.6rem 3rem;
+    height: 95vh;
 }

@@ -4,7 +4,7 @@ import './YourDriver.css';
 
 export default function YourDriver({ driverDetails }) {
     return (
-        <div className="YourDriver">
+        <div className="YourDriver scroll-child">
             <div style={{
                 background: `url(${driverDetails.image}) no-repeat 45% 25%`,
                 gridRow: 1/2,

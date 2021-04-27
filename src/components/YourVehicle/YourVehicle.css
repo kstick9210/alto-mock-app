@@ -3,13 +3,12 @@
     flex-direction: column;
     grid-row: 2/3;
     justify-content: space-between;
-    padding: 2rem;
 }
 
 .YourVehicle {
     display: grid;
     grid-template-rows: 50% auto;
-    min-height: 95vh;
-    padding: 1rem 1.4rem;
+    height: 95vh;
+    padding: 1rem 2.4rem 3rem;
     width: 100%;
 }

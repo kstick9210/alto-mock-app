@@ -4,7 +4,7 @@ import './YourVehicle.css';
 
 export default function YourVehicle({ vehicleDetails }) {
     return (
-        <div className="YourVehicle">
+        <div className="YourVehicle scroll-child">
             <div style={{
                 background: `url(${vehicleDetails.image}) no-repeat center`,
                 gridRow: 1/2,
@@ -12,7 +12,7 @@ export default function YourVehicle({ vehicleDetails }) {
             }}></div>
             <div className="vehicle-info-wrap">
                 <div>
-                    <p className="gold-heading">Your Vehicle</p>
+                    <p className="gold-heading">YOUR VEHICLE</p>
                     <p className="dark-color grotesk-light x-large">{vehicleDetails.license}</p>
                     <div className="row-wrap">
                         <div className="col-wrap single-border">

@@ -10,7 +10,7 @@ export default function YourTrip({ tripDetails }) {
     const maxFare = tripDetails.estimated_fare_max / 100;
 
     return (
-        <div className="YourTrip">
+        <div className="YourTrip scroll-child">
             <h1 className="linotype light-weight dark-color">Your Trip</h1>
             <div>
                 <h1 className="arrival-time dark-color">{tripDetails.estimated_arrival}</h1>
