@@ -2,7 +2,9 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 import './App.css';
+import altoLogo from './assets/Alto_logo.png';
 import YourTrip from './components/YourTrip/YourTrip';
+import BottomNav from './components/BottomNav/BottomNav';
 
 export default function App() {
   const [tripDetails, setTripDetails] = useState("");
@@ -26,7 +28,18 @@ export default function App() {
 
   return (
     <div className="App">
-      <YourTrip tripDetails={tripDetails} />
+      <img src={altoLogo} className="alto-logo" alt="Alto"/>
+      {tripDetails ? (
+        <>
+          <YourTrip tripDetails={tripDetails} />
+          <BottomNav 
+            destination={tripDetails.dropoff_location}
+            eta={tripDetails.estimated_arrival}
+          />
+        </>
+      ) : (
+        <div>Loading</div>
+      )}
     </div>
   );
 }

@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'Grotesk Regular';
+  src: url(./fonts/PxGrotesk-Regular.otf);
+}
+
+@font-face {
+  font-family: 'Grotesk Bold';
+  src: url(./fonts/PxGrotesk-Bold.otf);
+}
+
+@font-face {
+  font-family: 'Grotesk Light';
+  src: url(./fonts/PxGrotesk-Light.otf);
+}
+
+@font-face {
+  font-family: 'Linotype';
+  src: url(./fonts/Linotype\ -\ OptimaLTStd.otf);
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -5,9 +25,42 @@
 
 body {
   background-color: rgb(247, 243, 239);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: rgb(108, 104, 91);
+  font-family: 'Grotesk Regular', sans-serif;
+}
+
+.bold-weight {
+  font-weight: 800;
+}
+
+.dark-color {
+  color: rgb(30, 29, 30)
+}
+
+.default-button {
+  letter-spacing: 0.1rem;
+  padding: 0.8rem;
+  background-color: inherit;
+  border: 1px solid rgb(221, 218, 214);
+}
+
+.light-weight {
+  font-weight: 200;
+}
+
+.linotype {
+  font-family: 'Linotype', sans-serif;
+}
+
+.single-border {
+  border-top: 1px solid rgb(221, 218, 214);
+}
+
+.shortened-border {
+  margin-top: 1.1rem;
+  width: 30vw;
+}
+
+.x-small {
+  font-size: 0.8rem;
 }
