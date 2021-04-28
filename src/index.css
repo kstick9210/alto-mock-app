@@ -19,13 +19,13 @@
 }
 
 * {
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
 }
 
 .active-button {
-  color: rgb(255, 255, 255);
   background-color: rgb(172, 130, 109);
+  color: rgb(255, 255, 255);
 }
 
 body {
@@ -96,9 +96,9 @@ body {
 }
 
 .row-wrap {
-  width: 90%;
   display: flex;
   justify-content: space-between;
+  width: 90%;
 }
 
 .single-border {
@@ -112,6 +112,7 @@ body {
 
 .x-large {
   font-size: 4rem;
+  letter-spacing: -0.2rem;
 }
 
 .x-small {

@@ -6,7 +6,7 @@ import mapOverview from '../../assets/Map_overview.png';
 
 export default function YourTripMap({ amPm, eta, tripDetails, vibeDetails }) {
     return (
-        <div className="YourTripMap scroll-child" id="four">
+        <div className="YourTripMap scroll-child">
             <div className="map-wrap">
                 <img src={mapOverview} className="map" alt="map of DFW Airport" />
                 <div className="map-shadow"></div>

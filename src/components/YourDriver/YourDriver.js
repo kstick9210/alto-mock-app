@@ -4,12 +4,14 @@ import './YourDriver.css';
 
 export default function YourDriver({ driverDetails }) {
     return (
-        <div className="YourDriver scroll-child" id="two">
-            <div style={{
-                background: `url(${driverDetails.image}) no-repeat 45% 25%`,
-                gridRow: 1/2,
-                height: '45vh'
-            }}></div>
+        <div className="YourDriver scroll-child">
+            <div 
+                style={{
+                    background: `url(${driverDetails.image}) no-repeat 45% 25%`,
+                    gridRow: 1/2,
+                    height: '45vh'
+                }}
+            ></div>
             <div className="driver-info-wrap">
                 <div className="driver-text-wrap">
                     <p className="gold-heading">YOUR DRIVER</p>

@@ -22,10 +22,10 @@
 }
 
 .scroll-container {
-  scroll-snap-type: y mandatory;
   height: 95vh;
   overflow-y: scroll;
   position: relative;
+  scroll-snap-type: y mandatory;
 }
 
 .scroll-child {

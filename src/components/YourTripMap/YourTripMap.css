@@ -8,15 +8,15 @@
 
 .map {
     position: relative;
-    z-index: 1;
     width: 100%;
+    z-index: 1;
 }
 
 .map-icon {
-    position: absolute;
-    z-index: 100;
     bottom: 0.6rem;
+    position: absolute;
     right: 1rem;
+    z-index: 100;
 }
 
 .map-shadow {

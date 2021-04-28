@@ -4,12 +4,14 @@ import './YourVehicle.css';
 
 export default function YourVehicle({ vehicleDetails }) {
     return (
-        <div className="YourVehicle scroll-child" id="three">
-            <div style={{
-                background: `url(${vehicleDetails.image}) no-repeat center`,
-                gridRow: 1/2,
-                height: '45vh'
-            }}></div>
+        <div className="YourVehicle scroll-child">
+            <div 
+                style={{
+                    background: `url(${vehicleDetails.image}) no-repeat center`,
+                    gridRow: 1/2,
+                    height: '45vh'
+                }}
+            ></div>
             <div className="vehicle-info-wrap">
                 <div className="vehicle-text-wrap">
                     <p className="gold-heading">YOUR VEHICLE</p>
