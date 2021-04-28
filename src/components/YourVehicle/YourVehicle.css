@@ -16,6 +16,7 @@
     display: grid;
     grid-template-rows: 50% auto;
     height: 95vh;
+    max-width: 500px;
     padding: 1rem 2.4rem 3rem;
     width: 100%;
 }

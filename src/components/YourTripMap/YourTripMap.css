@@ -40,5 +40,6 @@
     display: grid;
     grid-template-rows: 50% auto;
     height: 100vh;
+    max-width: 500px;
     padding-bottom: 5.2rem;
 }

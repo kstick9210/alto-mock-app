@@ -9,7 +9,7 @@ export default function YourDriver({ driverDetails }) {
                 style={{
                     background: `url(${driverDetails.image}) no-repeat 45% 25%`,
                     gridRow: 1/2,
-                    height: '45vh'
+                    height: '25em',
                 }}
             ></div>
             <div className="driver-info-wrap">
