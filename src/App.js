@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import Scrollspy from 'react-scrollspy'
 
 import './App.css';
 import altoLogo from './assets/Alto_logo.png';
@@ -47,17 +46,6 @@ export default function App() {
       {tripDetails ? (
         <>
           <div className="scroll-container">
-            <Scrollspy
-              className="kabob-nav"
-              currentClassName="is-current"
-              items={['one', 'two', 'three', 'four']}
-            >
-              <li className="nav-item"><a href="#one">one</a></li>
-              <li className="nav-item"><a href="#two">two</a></li>
-              <li className="nav-item"><a href="#three">three</a></li>
-              <li className="nav-item"><a href="#four">four</a></li>
-            </Scrollspy>
-
             <YourTrip 
               amPm={amPm}
               eta={localEta}
