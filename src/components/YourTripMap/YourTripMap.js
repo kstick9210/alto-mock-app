@@ -9,6 +9,7 @@ export default function YourTripMap({ amPm, eta, tripDetails, vibeDetails }) {
         <div className="YourTripMap scroll-child" id="four">
             <div className="map-wrap">
                 <img src={mapOverview} className="map" alt="map of DFW Airport" />
+                <div className="map-shadow"></div>
                 <img src={mapIcon} className="map-icon" alt="map icon" />
             </div>
             <div className="info-wrap">
