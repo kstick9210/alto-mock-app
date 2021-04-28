@@ -13,7 +13,9 @@ export default function YourTrip({ tripDetails }) {
         <div className="YourTrip scroll-child">
             <h1 className="linotype light-weight dark-color">Your Trip</h1>
             <div>
-                <h1 className="arrival-time dark-color">{tripDetails.estimated_arrival}</h1>
+                <h1 className="arrival-time dark-color grotesk-light large">
+                    {tripDetails.estimated_arrival}
+                </h1>
                 <p className="x-small dark-color">Estimated arrival at {tripDetails.dropoff_location.name}</p>
             </div>
             <div className="row-wrap">

@@ -1,15 +1,21 @@
 import React from 'react';
 
 import './YourTripMap.css';
+import mapIcon from '../../assets/Map_icon.png';
 import mapOverview from '../../assets/Map_overview.png';
 
 export default function YourTripMap({ tripDetails, vibeDetails }) {
     return (
         <div className="YourTripMap scroll-child">
-            <img src={mapOverview} className="map" alt="map of DFW Airport" />
+            <div className="map-wrap">
+                <img src={mapOverview} className="map" alt="map of DFW Airport" />
+                <img src={mapIcon} className="map-icon" alt="map icon" />
+            </div>
             <p className="gold-heading">YOUR TRIP</p>
             <div>
-                <h1 className="arrival-time dark-color">{tripDetails.estimated_arrival}</h1>
+                <h1 className="arrival-time grotesk-light dark-color large">
+                    {tripDetails.estimated_arrival}
+                </h1>
                 <p className="x-small dark-color">Estimated arrival at {tripDetails.dropoff_location.name}</p>
             </div>
             <div className="col-wrap single-border">

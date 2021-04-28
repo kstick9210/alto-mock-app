@@ -1,5 +1,18 @@
 .map {
-    max-width: 90vw;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.map-icon {
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    right: 1rem;
+}
+
+.map-wrap {
+    position: relative;
 }
 
 .YourTripMap {

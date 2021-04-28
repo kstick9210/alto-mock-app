@@ -68,6 +68,10 @@ body {
   font-family: 'Grotesk Light', sans-serif;
 }
 
+.large {
+  font-size: 3rem;
+}
+
 .light-weight {
   font-weight: 200;
 }
