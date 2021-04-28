@@ -10,6 +10,7 @@ import YourTripMap from './components/YourTripMap/YourTripMap';
 import BottomNav from './components/BottomNav/BottomNav';
 
 export default function App() {
+  const [localEta, setLocalEta] = useState("")
   const [tripDetails, setTripDetails] = useState("");
   const [driverDetails, setDriverDetails] = useState("");
   const [vehicleDetails, setVehicleDetails] = useState("");
@@ -22,7 +23,13 @@ export default function App() {
       setDriverDetails(response.data.driver);
       setVehicleDetails(response.data.vehicle);
       setVibeDetails(response.data.vibe);
+      convertEtaToLocalTime(response.data.trip.estimated_arrival)
     });
+  }
+
+  function convertEtaToLocalTime(eta) {
+    const time = new Date(eta);
+    setLocalEta(time.toLocaleTimeString([], { timeStyle: 'short' }));
   }
 
   useEffect(() => {
@@ -35,17 +42,21 @@ export default function App() {
       {tripDetails ? (
         <>
           <div className="scroll-container">
-            <YourTrip tripDetails={tripDetails} />
+            <YourTrip 
+              eta={localEta}
+              tripDetails={tripDetails}
+              />
             <YourDriver driverDetails={driverDetails} />
             <YourVehicle vehicleDetails={vehicleDetails} />
             <YourTripMap 
+              eta={localEta}
               tripDetails={tripDetails}
               vibeDetails={vibeDetails}
             />
           </div>
           <BottomNav 
             destination={tripDetails.dropoff_location}
-            eta={tripDetails.estimated_arrival}
+            eta={localEta}
           />
         </>
       ) : (

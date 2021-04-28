@@ -14,7 +14,7 @@ export default function BottomNav({ destination, eta }) {
                 :
                     <p className="bold-weight">{destination.street_line1}</p>
                 }
-                <p className="x-small">{eta}</p>
+                <p className="x-small">ETA: {eta}</p>
             </div>
             <img src={vibesIcon} className="nav-icon" alt="vibes icon" />
         </div>

@@ -80,6 +80,12 @@ body {
   font-family: 'Linotype', sans-serif;
 }
 
+#root {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .row-wrap {
   width: 90%;
   display: flex;

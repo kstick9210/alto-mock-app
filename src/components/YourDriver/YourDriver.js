@@ -11,7 +11,7 @@ export default function YourDriver({ driverDetails }) {
                 height: '45vh'
             }}></div>
             <div className="driver-info-wrap">
-                <div>
+                <div className="text-wrap">
                     <p className="gold-heading">YOUR DRIVER</p>
                     <p className="dark-color grotesk-light x-large">{driverDetails.name}</p>
                     <p className="x-small">{driverDetails.bio}</p>

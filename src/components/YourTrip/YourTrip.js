@@ -4,7 +4,7 @@ import './YourTrip.css';
 import editIcon from '../../assets/Edit_icon.png';
 import infoIcon from '../../assets/Info_icon.png';
 
-export default function YourTrip({ tripDetails }) {
+export default function YourTrip({ eta, tripDetails }) {
     const { dropoff_location, pickup_location } = tripDetails;
     const minFare = tripDetails.estimated_fare_min / 100;
     const maxFare = tripDetails.estimated_fare_max / 100;
@@ -13,8 +13,8 @@ export default function YourTrip({ tripDetails }) {
         <div className="YourTrip scroll-child">
             <h1 className="linotype light-weight dark-color">Your Trip</h1>
             <div>
-                <h1 className="arrival-time dark-color grotesk-light large">
-                    {tripDetails.estimated_arrival}
+                <h1 className="arrival-time dark-color grotesk-light light-weight x-large">
+                    {eta}
                 </h1>
                 <p className="x-small dark-color">Estimated arrival at {tripDetails.dropoff_location.name}</p>
             </div>
@@ -47,7 +47,7 @@ export default function YourTrip({ tripDetails }) {
             </div>
             <p className="trip-notes">
                 {tripDetails.notes}&nbsp;&nbsp;
-                <img src={editIcon}/>
+                <img src={editIcon} alt="edit icon" />
             </p>
             <button className="default-button" disabled>CANCEL TRIP</button>
         </div>
