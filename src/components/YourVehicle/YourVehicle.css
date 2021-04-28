@@ -5,6 +5,13 @@
     justify-content: space-between;
 }
 
+.vehicle-text-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    justify-content: space-evenly;
+}
+
 .YourVehicle {
     display: grid;
     grid-template-rows: 50% auto;

@@ -38,6 +38,14 @@ body {
   font-weight: 800;
 }
 
+.button-wrap {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
 .col-head {
   padding: 0.4rem 0;
 }
@@ -53,9 +61,10 @@ body {
 }
 
 .default-button {
+  border: 1px solid rgb(221, 218, 214);
   letter-spacing: 0.1rem;
   padding: 0.8rem;
-  border: 1px solid rgb(221, 218, 214);
+  width: 100%;
 }
 
 .gold-heading {

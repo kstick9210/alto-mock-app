@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import Scrollspy from 'react-scrollspy'
 
 import './App.css';
 import altoLogo from './assets/Alto_logo.png';
@@ -10,7 +11,8 @@ import YourTripMap from './components/YourTripMap/YourTripMap';
 import BottomNav from './components/BottomNav/BottomNav';
 
 export default function App() {
-  const [localEta, setLocalEta] = useState("")
+  const [localEta, setLocalEta] = useState("");
+  const [ amPm, setAmPm ] = useState("");
   const [tripDetails, setTripDetails] = useState("");
   const [driverDetails, setDriverDetails] = useState("");
   const [vehicleDetails, setVehicleDetails] = useState("");
@@ -28,8 +30,10 @@ export default function App() {
   }
 
   function convertEtaToLocalTime(eta) {
-    const time = new Date(eta);
-    setLocalEta(time.toLocaleTimeString([], { timeStyle: 'short' }));
+    let time = new Date(eta);
+    time = time.toLocaleTimeString([], { timeStyle: 'short' });
+    setLocalEta(time.slice(0, time.length - 3));
+    setAmPm(time.slice(time.length - 2));
   }
 
   useEffect(() => {
@@ -39,24 +43,39 @@ export default function App() {
   return (
     <div className="App">
       <img src={altoLogo} className="alto-logo" alt="Alto"/>
+
       {tripDetails ? (
         <>
           <div className="scroll-container">
+            <Scrollspy
+              className="kabob-nav"
+              currentClassName="is-current"
+              items={['one', 'two', 'three', 'four']}
+            >
+              <li className="nav-item"><a href="#one">one</a></li>
+              <li className="nav-item"><a href="#two">two</a></li>
+              <li className="nav-item"><a href="#three">three</a></li>
+              <li className="nav-item"><a href="#four">four</a></li>
+            </Scrollspy>
+
             <YourTrip 
+              amPm={amPm}
               eta={localEta}
               tripDetails={tripDetails}
               />
             <YourDriver driverDetails={driverDetails} />
             <YourVehicle vehicleDetails={vehicleDetails} />
             <YourTripMap 
+              amPm={amPm}
               eta={localEta}
               tripDetails={tripDetails}
               vibeDetails={vibeDetails}
             />
           </div>
           <BottomNav 
-            destination={tripDetails.dropoff_location}
+            amPm={amPm}
             eta={localEta}
+            destination={tripDetails.dropoff_location}
           />
         </>
       ) : (

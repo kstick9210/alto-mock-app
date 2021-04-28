@@ -1,6 +1,6 @@
 .alto-logo {
   position: fixed;
-  top: 1.5rem;
+  top: 2rem;
   z-index: 1000;
 }
 
@@ -14,10 +14,36 @@
   position: relative;
 }
 
+.is-current {
+  background-color: rgb(30, 29, 30);
+  color: red;
+}
+
+.kabob-nav {
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  z-index: 1000;
+}
+
+.nav-item {
+  background-color: rgb(221, 218, 214);
+  border-radius: 50%;
+  height: 5px;
+  list-style: none;
+  margin: 5px;
+  width: 5px;
+}
+
+.nav-item > a {
+  text-decoration: none;
+}
+
 .scroll-container {
   scroll-snap-type: y mandatory;
   height: 95vh;
   overflow-y: scroll;
+  position: relative;
 }
 
 .scroll-child {

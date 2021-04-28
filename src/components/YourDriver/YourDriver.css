@@ -6,8 +6,11 @@
     padding: 2rem;
 }
 
-.text-wrap {
-    align-self: stretch;
+.driver-text-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-evenly;
 }
 
 .YourDriver {
