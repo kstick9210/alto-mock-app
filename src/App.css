@@ -14,6 +14,13 @@
   position: relative;
 }
 
+.kabob {
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+  z-index: 1000;
+}
+
 .scroll-container {
   scroll-snap-type: y mandatory;
   height: 95vh;

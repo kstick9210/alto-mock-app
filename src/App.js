@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import './App.css';
 import altoLogo from './assets/Alto_logo.png';
+import kabob from './assets/Kabob_nav.png';
 import YourTrip from './components/YourTrip/YourTrip';
 import YourDriver from './components/YourDriver/YourDriver';
 import YourVehicle from './components/YourVehicle/YourVehicle';
@@ -42,6 +43,7 @@ export default function App() {
   return (
     <div className="App">
       <img src={altoLogo} className="alto-logo" alt="Alto"/>
+      <img src={kabob} className="kabob" alt="app navigation"/>
 
       {tripDetails ? (
         <>
