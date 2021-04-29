@@ -32,6 +32,7 @@ body {
   background-color: rgb(247, 243, 239);
   color: rgb(108, 104, 91);
   font-family: 'Grotesk Regular', sans-serif;
+  height: 100%;
 }
 
 .bold-weight {
@@ -77,6 +78,10 @@ body {
   font-family: 'Grotesk Light', sans-serif;
 }
 
+html {
+  height: 100%;
+}
+
 .large {
   font-size: 3rem;
 }
@@ -93,6 +98,7 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .row-wrap {
