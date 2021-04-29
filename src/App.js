@@ -9,6 +9,7 @@ import YourDriver from './components/YourDriver/YourDriver';
 import YourVehicle from './components/YourVehicle/YourVehicle';
 import YourTripMap from './components/YourTripMap/YourTripMap';
 import BottomNav from './components/BottomNav/BottomNav';
+import Loading from './components/Loading/Loading';
 
 export default function App() {
   const [localEta, setLocalEta] = useState("");
@@ -19,7 +20,8 @@ export default function App() {
   const [vibeDetails, setVibeDetails] = useState("");
 
   const getRideDetails = () => {
-    axios.get("https://mockalto.netlify.app/mission.json")
+    // axios.get("https://mockalto.netlify.app/mission.json")
+    axios.get("http://localhost:3000/mission.json")
     .then(response => {
       setTripDetails(response.data.trip);
       setDriverDetails(response.data.driver);
@@ -69,7 +71,7 @@ export default function App() {
           />
         </>
       ) : (
-        <div>Loading</div>
+        <Loading />
       )}
     </div>
   );
