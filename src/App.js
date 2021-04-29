@@ -19,7 +19,7 @@ export default function App() {
   const [vibeDetails, setVibeDetails] = useState("");
 
   const getRideDetails = () => {
-    axios.get("http://localhost:3000/mission.json")
+    axios.get("https://mockalto.netlify.app/")
     .then(response => {
       setTripDetails(response.data.trip);
       setDriverDetails(response.data.driver);
